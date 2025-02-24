@@ -5,6 +5,7 @@ function extract() {
     let maxn = 0;
     let tmp = {};
     let poly = document.getElementById("poly").value.trim();
+    
     poly = poly.replaceAll('{', '');
     poly = poly.replaceAll('}', '');
     poly = poly.replace(/\s+/g, "").toLowerCase();
@@ -73,7 +74,7 @@ function solve(g) {
     let cnt = 0;
     while (1) {
         cnt++;
-        if (cnt > 5000) return "nonono";
+        if (cnt > 10000) return "nonono";
         let res1 = div(f, u, v);
         let R1 = res1.at(-2), R2 = res1.at(-1);
         if (Math.abs(R1) < eps && Math.abs(R2) < eps) break;
