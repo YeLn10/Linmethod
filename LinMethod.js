@@ -5,10 +5,10 @@ function extract() {
     let maxn = 0;
     let tmp = {};
     let poly = document.getElementById("poly").value.trim();
-    const terms = poly.split(/(?=[+-])/g);
     poly = poly.replaceAll('{', '');
     poly = poly.replaceAll('}', '');
     poly = poly.replace(/\s+/g, "").toLowerCase();
+    const terms = poly.split(/(?=[+-])/g);
 
     for (const term of terms) {
         let sign = '+';
