@@ -1,0 +1,138 @@
+body {
+    font-weight: bold;
+    font-family: "Courier New", "Microsoft Yahei";
+    text-align: center;
+    background-image: url(img/队徽.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235, 235, 235, 0.8);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#title{
+    color:white;
+    font-size:80px;
+    font-weight:800;
+    text-shadow:1px 0px #009916, 1px 2px #006615, 3px 1px #009916,
+            2px 3px #006615, 4px 2px #009916, 4px 4px #006615,
+            5px 3px #009916, 5px 5px #006615, 7px 4px #009916,
+            6px 6px #006615, 8px 5px #009916, 7px 7px #006615,
+            9px 6px #009916, 9px 8px #006615, 11px 7px #009916;
+    user-select: none;
+    -webkit-user-select: none;
+}
+button {
+    border: 1px solid #0099CC;
+    border-radius: 70px;
+    text-decoration: none;
+    border: none;
+    color: black;
+    padding: 3px 28px;
+    margin: 2px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #969696c8;
+    color: white;
+}
+
+br {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+input {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 67.5%;
+    margin-bottom: 10px;
+    font: 14px/1 "microsoft yahei";
+    text-align: center;
+    left: 20.3%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+#output {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+input:focus {
+    /* color: rgb(0, 255, 255); */
+    background-color: #e9e9e9;
+    outline-color: rgb(149, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+input::-ms-input-placeholder {
+    text-align: center;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+
+h1,
+label,
+button {
+    position: relative;
+    z-index: 5;
+}
+
+#allin {
+    width: 99%;
+    position: absolute;
+    top: 30%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#wenzi {
+    position: fixed;
+    left: 9.3%;
+}
+
+#ans {
+    position: absolute;
+    background-color: #e9e9e9;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 67.5%;
+    margin-bottom: 10px;
+    font: 14px/1 "microsoft yahei";
+    text-align: center;
+    left: 12.5%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
